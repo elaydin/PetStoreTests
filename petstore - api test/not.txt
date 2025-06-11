@@ -1,0 +1,1 @@
+api testlerinin proje dosyasını yüklerken sadece  cypress.config.js ve petstore-api-spec.cy.js dosyalarını yükledim. node_modules dosya içeriği dosya boyutu çok büyük lduğu için githuba yüklenmedi. 
