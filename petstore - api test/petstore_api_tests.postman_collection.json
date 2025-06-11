@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "0d7d9575-9013-41ff-87a3-259ae1b9f521",
+		"name": "Homework SQAT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45275517",
+		"_collection_link": "https://martian-star-717938.postman.co/workspace/Ela-Ayd%C4%B1n's-Workspace~0e13407e-b51e-4631-8eb0-90f701695af5/collection/45275517-0d7d9575-9013-41ff-87a3-259ae1b9f521?action=share&source=collection_link&creator=45275517"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 1457843,\n  \"username\": \"ismailAydemir2\",\n  \"firstName\": \"ismail2\",\n  \"lastName\": \"aydemir2\",\n  \"email\": \"ismailaydemir2@gmail.com\",\n  \"password\": \"Deneme1\",\n  \"phone\": null,\n  \"userStatus\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserInfo",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/AliceBob",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"AliceBob"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 985632147,\n  \"username\": \"elaYeni\",\n  \"firstName\": \"isimYeni\",\n  \"lastName\": \"soyadYeni\",\n  \"email\": \"newmail@gmail.com\",\n  \"password\": \"124578457441\",\n  \"phone\": \"123654789\",\n  \"userStatus\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/elayarenaydin",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"elayarenaydin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://petstore.swagger.io/v2/user/ismailTest",
+							"protocol": "https",
+							"host": [
+								"petstore",
+								"swagger",
+								"io"
+							],
+							"path": [
+								"v2",
+								"user",
+								"ismailTest"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
